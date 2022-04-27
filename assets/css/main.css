@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #00ff33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
+    background-color: #000;
+    color: var( --primary-color );
+    font-family: 'terminalFont', monospace;
+}
+
+h1 {
+    font-size: clamp( 1.6rem, 6vw, 2.2rem);
+}
+
+h2 {
+    font-size: clamp( 1.3rem, 4vw, 1.6rem);
+    font-weight: 400;
+}
+
+p{
+    font-size: clamp( 1rem, 3vw, 1.4rem);
+}
+
+i {
+    font-size: clamp( 2rem, 5vw, 3rem);
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
+    gap: 6rem;
+}
+
+#exercises-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.hidden-span {
+    visibility: hidden;
+}
+
+
+.exercises-item {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border: 1px solid var( --primary-color );
+    padding: 2rem;
+    gap: 1.2rem;
+}
+
+.mobile-break {
+    display: none;
+}
+
+.underscore-std {
+    visibility: hidden;
+}
+
+.underscore-hover {
+    visibility: hidden;
+}
+
+.dev-icon {
+    font-size: 2rem;
+}
+
+.link-btn {
+    margin: auto 1rem auto 3rem;
+    text-decoration: none;
+    color: var( --primary-color );
+    font-size: clamp( 1rem, 3vw, 1.4rem);
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.link-btn-mobile {
+    display: none;
+}
+
+.link-btn:hover {
+    color: #fff;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+@media ( max-width: 40em ) {
+    h1 {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #main-section {
+        padding: 7% 0;
+        gap: 4rem;
+    }
+
+    #exercises-container {
+        gap: 3.5rem;
+        align-items: center;
+}
+
+    .mobile-break {
+        display: block;
+    }
+
+    .link-btn {
+        display: none;
+    }
+
+    .link-btn-mobile {
+        display: block;
+        text-decoration: none;
+        color: var( --primary-color );
+    }
+
+}
