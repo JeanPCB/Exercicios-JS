@@ -2,4 +2,4 @@
 
 *Local para postar meus exercícios feitos*
 
-- link: https://jeanpcb.github.io/Praticando-com-Exercicios/
+- Dá uma conferida 😆 : https://jeanpcb.github.io/Praticando-com-Exercicios/
