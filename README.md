@@ -1,4 +1,4 @@
-# Exercícios Javascript
+# Exercícios - Javascript 
 
 *Local para postar meus exercícios de Javascript*
 
