@@ -55,7 +55,7 @@ i {
 
 .excs-menu {
     display: grid;
-    gap: 3rem;
+    gap: 5rem;
     grid-template-columns: 20% 20%;
     align-items: center;
     justify-content: center;
