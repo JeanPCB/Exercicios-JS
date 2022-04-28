@@ -1,5 +1,6 @@
 :root {
     --primary-color: #00ff33;
+    --main-transition: 0.3s;
 }
 
 * {
@@ -37,30 +38,10 @@ i {
 
 #main-section {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 3% 0;
     gap: 6rem;
-}
-
-#exercises-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-
-
-.hidden-span {
-    visibility: hidden;
-}
-
-
-.exercises-item {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    border: 1px solid var( --primary-color );
-    padding: 2rem;
-    gap: 1.2rem;
 }
 
 .mobile-break {
@@ -71,22 +52,53 @@ i {
     visibility: hidden;
 }
 
+.excs-menu {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 20% 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.exercises-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var( --primary-color );
+    padding: 2rem;
+    gap: 1.2rem;
+    text-align: center;
+    background-color: #000;
+    transition: var(--main-transition);
+}
+
+.exercises-item:hover {
+    transform: scale(1.2);
+    transition: var(--main-transition);
+}
+
+.excs-thumb {
+    width: 100%;
+}
+
+.hidden-underscore-span {
+    visibility: hidden;
+}
+
 .underscore-hover {
     visibility: hidden;
 }
 
-.dev-icon {
-    font-size: 2rem;
+.hidden-nbsp-span {
+    display: none;
 }
 
 .link-btn {
-    margin: auto 1rem auto 3rem;
     text-decoration: none;
     color: var( --primary-color );
     font-size: clamp( 1rem, 3vw, 1.4rem);
     border: 1px solid var(--primary-color);
     padding: 1rem;
-    transition: 0.3s;
+    transition: var(--main-transition);
 }
 
 .link-btn-mobile {
@@ -95,8 +107,8 @@ i {
 
 .link-btn:hover {
     color: #fff;
-    /* transform: scale(1.2); */
-    transition: 0.3s;
+    border-color: #fff;
+    transition: var(--main-transition);
 }
 
 @media ( max-width: 40em ) {
@@ -114,10 +126,13 @@ i {
         gap: 4rem;
     }
 
-    #exercises-container {
-        gap: 3.5rem;
+    .excs-menu-mobile {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 70%;
         align-items: center;
-}
+        justify-content: center;
+    }
 
     .mobile-break {
         display: block;

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(5, 122, 231);
+    --secondary-color: rgb(30, 93, 151);
+    --secondary-color-darker: rgb(18, 66, 110);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    font-family: 'Open sans', sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 8px;
+    border: 1px solid #8f8f8f;
+}
+
+td {
+    font-size: 1.2rem;
+}
+
+#main-container {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 2.4rem;
+    max-width: 413px;
+}
+
+#calculo-container {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#calculo-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#calculo-container span {
+    color: yellow;
+    font-size: 1.4rem;
+}
+
+#calculo-container span:nth-child(2) {
+    color: black;
+}
+
+#calcular-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#calcular-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+#calcular-container input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#calcular-container input:focus {
+    border: none;
+    outline: 1px solid red;
+}
+
+#calcular-container button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    border: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+#calcular-container button:hover {
+    background-color: var(--secondary-color-darker);
+    cursor: pointer;
+}
+
+#calcular-container button:active {
+    background-color: black;
+}
+
+.p-resultado {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.resultado-valido {
+    background-color: rgb(67, 232, 67);
+}
+
+.resultado-invalido {
+    background-color: rgb(231, 29, 29);
+    color: #fff;
+}
+
+@media (min-width: 40em) {
+    #main-container {
+        margin: 3% auto;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 44 - Revisão</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section id="main-container">
+        <h1>TABELA IMC</h1>
+        
+        <div id="calculo-container">
+            <h3>Como é feito o cálculo 🤔</h3>
+            <p> <span> IMC </span> <span> = </span> Peso / Altura² </p>
+        </div>
+
+        <table>
+            <tr>
+                <th>
+                    <h3> IMC </h3>
+                </th>
+                <th>
+                    <h3> RESULTADO </h3>
+                </th>
+            </tr>
+            <tr>
+                <td> <b> < </b> 18,5 </td>
+                <td> Abaixo do Peso </td>
+            </tr>
+            <tr>
+                <td> <b> ≥ </b> 18,5 <b> ≤ </b> 24,9 </td>
+                <td> Peso Normal </td>
+            </tr>
+            <tr>
+                <td> <b> ≥ </b> 25 <b> ≤ </b> 29,9 </td>
+                <td> Sobrepeso </td>
+            </tr>
+            <tr>
+                <td> <b> ≥ </b> 30 <b> ≤ </b> 34,9 </td>
+                <td> Obesidade Grau I </td>
+            </tr>
+            <tr>
+                <td> <b> ≥ </b> 35 <b> ≤ </b> 39,9 </td>
+                <td> Obesidade Grau II</td>
+            </tr>
+            <tr>
+                <td> <b> ≥ </b> 40 </td>
+                <td> Obesidade Grau III</td>
+            </tr>
+        </table>
+
+        <div id="calcular-container">
+            <h2>Calcule seu IMC  ⚖️  </h2>
+
+            <form action="">
+                <label for="input-peso">
+                    <b> Peso (kg): </b>
+                </label>
+                <input type="text" id="input-peso">
+
+                <label for="input-altura">
+                    <b> Altura (m): </b>
+                </label>
+                <input type="text" id="input-altura">
+
+                <button type="submit">CALCULAR</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
