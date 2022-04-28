@@ -139,14 +139,4 @@ i {
         display: block;
     }
 
-    .link-btn {
-        display: none;
-    }
-
-    .link-btn-mobile {
-        display: block;
-        text-decoration: none;
-        color: var( --primary-color );
-    }
-
 }
