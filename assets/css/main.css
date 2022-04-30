@@ -37,7 +37,7 @@ p{
     align-items: center;
     flex-direction: column;
     padding-top: 4%;
-    padding-bottom: 8%;
+    padding-bottom: 12%;
     gap: 6rem;
 }
 
@@ -131,7 +131,6 @@ p{
     }
 
     #main-section {
-        padding: 7% 0;
         gap: 4rem;
     }
 
