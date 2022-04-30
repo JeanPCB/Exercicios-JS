@@ -20,20 +20,16 @@ body {
 }
 
 h1 {
-    font-size: clamp( 1.6rem, 6vw, 2.2rem);
+    font-size: clamp( 1.4rem, 6vw, 2.2rem);
 }
 
 h2 {
-    font-size: clamp( 1.3rem, 4vw, 1.6rem);
+    font-size: clamp( 1.2rem, 4vw, 1.6rem);
     font-weight: 400;
 }
 
 p{
     font-size: clamp( 1rem, 3vw, 1.4rem);
-}
-
-i {
-    font-size: clamp( 2rem, 5vw, 3rem);
 }
 
 #main-section {
@@ -78,8 +74,9 @@ i {
 .exercises-content {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    gap: 1.5rem;
+    padding: calc( 1rem + 1vw );
+    padding-top: calc( 1rem + 0.5vw );
+    gap: calc( 1rem + 0.5vw);
 }
 
 .excs-thumb {
@@ -117,6 +114,12 @@ i {
     transition: var(--main-transition);
 }
 
+@media ( max-width: 60em ) {
+    .excs-menu-mobile {
+        grid-template-columns: 30% 30%;
+    }
+}
+
 @media ( max-width: 40em ) {
     h1 {
         text-align: center;
@@ -132,16 +135,11 @@ i {
         gap: 4rem;
     }
 
-    .excs-menu-mobile {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 70%;
-        align-items: center;
-        justify-content: center;
-    }
-
     .mobile-break {
         display: block;
     }
 
+    .excs-menu-mobile {
+        grid-template-columns: 50%;
+    }
 }
