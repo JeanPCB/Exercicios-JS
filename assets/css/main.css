@@ -72,6 +72,7 @@ i {
 .exercises-item:hover {
     transform: scale(1.2);
     transition: var(--main-transition);
+    box-shadow:0 0 10px 3px var(--primary-color);
 }
 
 .exercises-content {
