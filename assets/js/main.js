@@ -54,4 +54,19 @@ function underscoreAnim() {
     setIntervalTitle();
 }
 
+function preventAnchorHref() {
+    const anchorMobile = document.querySelectorAll( '.anchor-mobile' );
+
+    function screenWidthCheck() {
+        if( window.innerWidth < 1200) {
+            for( i = 0; i < anchorMobile.length; i++ ) {
+                anchorMobile[ i ].addEventListener( 'click', (e) => e.preventDefault() );
+            }
+        }
+    }
+
+    screenWidthCheck();
+}
+
 underscoreAnim()
+preventAnchorHref();
