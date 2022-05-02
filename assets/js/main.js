@@ -33,7 +33,6 @@ function underscoreAnim() {
         } );
         linkBtn[ index ].addEventListener( 'mouseout', () => {
             nbspChange( index );
-            setIntervalTitle();
             clearInterval( intervalBtn );
             underscoreHover[ index ].classList = 'underscore-hover';
         } );
