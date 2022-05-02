@@ -38,8 +38,17 @@ function underscoreAnim() {
         } );
     }
 
+    function clearAnimOnClick( index ) {
+        linkBtn[ index ].addEventListener( 'click', () => {
+            nbspChange( index );
+            clearInterval( intervalBtn );
+            underscoreHover[ index ].classList = 'underscore-hover';
+        } );
+    }
+
     for( let i = 0; i < linkBtn.length; i++ ) {
         hoverBtnAnim( i );
+        clearAnimOnClick( i );
     }
 
     setIntervalTitle();
