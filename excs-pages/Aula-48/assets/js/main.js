@@ -59,6 +59,7 @@ function setDate() {
     function divResult() {
         const newDiv = createElement( 'div' );
         newDiv.setAttribute( 'id', 'result' );
+        newDiv.innerHTML = '<p style="color:var(--primary-color);">DATA DE ACESSO:</p>';
         return mainSection.appendChild( newDiv );
     }
 
