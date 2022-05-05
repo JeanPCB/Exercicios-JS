@@ -68,6 +68,12 @@ h2 {
 
 .excs-menu article a > img {
     width: 100%;
+    transition: var(--main-transition);
+}
+
+.excs-menu article a > img:hover {
+    box-shadow: 0 0 10px 3px #fff;
+    transition: var(--main-transition);
 }
 
 .excs-menu article .excs-content {
