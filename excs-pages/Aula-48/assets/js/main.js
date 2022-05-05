@@ -58,8 +58,11 @@ function setDate() {
 
     function divResult() {
         const newDiv = createElement( 'div' );
+        const divLabel = createElement( 'p' );
+        divLabel.textContent = 'DATA DE ACESSO:';
+        divLabel.style = 'color: var(--primary-color); font-style: italic;';
         newDiv.setAttribute( 'id', 'result' );
-        newDiv.innerHTML = '<p style="color:var(--primary-color);">DATA DE ACESSO:</p>';
+        newDiv.appendChild( divLabel );
         return mainSection.appendChild( newDiv );
     }
 
