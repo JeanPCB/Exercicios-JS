@@ -68,5 +68,5 @@ function preventAnchorHref() {
     screenWidthCheck();
 }
 
-underscoreAnim()
+underscoreAnim();
 preventAnchorHref();

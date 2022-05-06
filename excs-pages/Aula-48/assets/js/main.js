@@ -79,4 +79,4 @@ function setDate() {
     setFullTime();
 }
 
-setDate()
+setDate();
