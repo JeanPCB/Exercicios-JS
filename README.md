@@ -2,4 +2,4 @@
 
 *Local para postar meus exercícios de Javascript*
 
-🔗 Dá uma conferida 😆 : https://jeanpcb.github.io/Exercicios-JS/
+🔗 <a href="https://jeanpcb.github.io/Exercicios-JS/"> Clique aqui pra conferir</a> 😉
