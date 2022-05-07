@@ -1,13 +1,13 @@
 function setDate() {
     const mainSection = document.querySelector( '#main-section' );
-    const data = new Date();
-    const weekDay = setWeekDay( data.getDay() );
-    const day = leftZero( data.getDate() );
-    const month = setMonth( data.getMonth() );
-    const year = leftZero( data.getFullYear() );
-    const hours = leftZero( data.getHours() );
-    const minutes = leftZero( data.getMinutes() );
-    const seconds = leftZero( data.getSeconds() );
+    const date = new Date();
+    const weekDay = setWeekDay( date.getDay() );
+    const day = leftZero( date.getDate() );
+    const month = setMonth( date.getMonth() );
+    const year = leftZero( date.getFullYear() );
+    const hours = leftZero( date.getHours() );
+    const minutes = leftZero( date.getMinutes() );
+    const seconds = leftZero( date.getSeconds() );
 
     function setFullDate() {
         const resultDiv = document.querySelector( '#result' );
