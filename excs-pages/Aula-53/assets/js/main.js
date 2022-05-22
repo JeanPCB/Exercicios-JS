@@ -15,7 +15,7 @@ function main() {
         return document.createTextNode( content );
     }
 
-    function loopIndex() {
+    function setElements() {
         const newDiv = document.querySelector( '#result' );
 
         for( let i = 0; i < elements.length; i++ ) {
@@ -34,7 +34,7 @@ function main() {
     }
 
     resultDiv();
-    loopIndex();
+    setElements();
 } 
 
 main()
