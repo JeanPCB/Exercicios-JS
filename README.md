@@ -13,7 +13,7 @@
 
 **(Espero que tenha lido o título...)**
 
-## Objetivo
+## Descrição
 
 Muitas vezes você tem exercícios interessantes feitos, mas não acha necessário criar um repositório pra cada "exerciciozinho" feito, não?
 
