@@ -6,7 +6,7 @@
 <div> <img src='./assets/gifs/main-screen.gif' height='400'> </div>
 <br>
 
-🔗 <a href="https://jeanpcb.github.io/Exercicios-JS/"> Clique aqui pra conferir</a> 😉
+🔗 <a href="https://exercicios-js-vanilla.netlify.app"> Clique aqui pra conferir</a> 😉
 
 - **Linguagem foco:** <br>
 ✔ Javascript 
